@@ -25,6 +25,7 @@ header {
     animation: fadeIn 2s ease-out;
     letter-spacing: 5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
 }
 
 .summary-container {
@@ -35,12 +36,14 @@ header {
     gap: 20px;
     animation: slideUp 2s ease-in-out;
     padding: 20px 15px;
-    margin-bottom: 100px; /* To avoid overlap with the button */
+    margin-bottom: 100px;
+    margin-left: 15px; /* To avoid cutting text on left edge */
+    margin-right: 15px; /* To avoid cutting text on right edge */
 }
 
 .summary-item {
     font-size: 1.5rem;
-    width: 90%;
+    width: 100%;
     max-width: 800px;
     padding: 25px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -131,23 +134,46 @@ header {
     body {
         height: auto;
         justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     header {
         font-size: 2.5rem;
+        margin-top: 10px;
     }
 
     .summary-item {
         font-size: 1.2rem;
         padding: 15px;
+        margin: 10px 0;
     }
 
     .animation-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .button {
         font-size: 1.2rem;
         padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 2rem;
+    }
+
+    .summary-item {
+        font-size: 1rem;
+    }
+
+    .animation-text {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
