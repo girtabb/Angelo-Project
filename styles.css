@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgb(196, 164, 132) 0%, rgba(255, 255, 255, 1) 100%);
     background-attachment: fixed;
     color: white;
     overflow-x: hidden;
