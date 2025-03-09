@@ -6,19 +6,22 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    background-attachment: fixed;
     color: white;
     overflow-x: hidden;
     height: 100vh;
-    position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #ff6f61;
-    padding-top: 80px;
+    padding-top: 20px;
     animation: fadeIn 2s ease-out;
     letter-spacing: 5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -31,7 +34,8 @@ header {
     flex-direction: column;
     gap: 20px;
     animation: slideUp 2s ease-in-out;
-    padding: 30px 15px;
+    padding: 20px 15px;
+    margin-bottom: 100px; /* To avoid overlap with the button */
 }
 
 .summary-item {
@@ -100,7 +104,7 @@ header {
 }
 
 .button {
-    padding: 20px 40px;
+    padding: 15px 30px;
     background-color: #ff6f61;
     color: white;
     border: none;
@@ -111,6 +115,7 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
     margin-top: 30px;
+    z-index: 10;
 }
 
 .button:hover {
@@ -120,4 +125,29 @@ header {
 
 .button:active {
     transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    header {
+        font-size: 2.5rem;
+    }
+
+    .summary-item {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .animation-text {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
 }
