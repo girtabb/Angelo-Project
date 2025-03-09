@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    font-size: 3rem;
+    font-size: 60px;
     font-weight: bold;
     color: #ff6f61;
     padding-top: 20px;
@@ -139,7 +139,7 @@ header {
     }
 
     header {
-        font-size: 2.2rem;  /* Slightly smaller header on tablets */
+        font-size: 60px;  /* Slightly smaller header on tablets */
         margin-top: 10px;
         padding-bottom: 20px;  /* Padding for better spacing */
     }
