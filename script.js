@@ -6,11 +6,12 @@ window.onload = () => {
         setTimeout(() => {
             item.style.animationDelay = '0s';
             item.style.opacity = 1;
+            item.style.transform = 'translateY(0)';
         }, delay);
-        delay += 300; // Delay for each item to animate one after another
+        delay += 400; // Delay for each item to animate one after another
     });
 };
 
 function startAnalysis() {
-    alert("Analysiere die Episode: Angelo versucht, seinen Bruder mit Süßigkeiten ruhigzustellen – doch es geht alles schief!");
+    alert("In dieser Episode erleben die Freunde ein dramatisches Abenteuer: Peter, nach einem Zuckerrausch, verliert jegliche Kontrolle. Doch am Ende ist der Spaß die wahre Belohnung!");
 }
