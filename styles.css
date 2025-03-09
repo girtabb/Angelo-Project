@@ -77,7 +77,7 @@ header {
 
 .image {
     width: 100%;
-    max-width: 230px; /* Bilder auf max. 230px setzen */
+    max-width: 230px; /* Bilder auf PC max. 230px setzen */
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
@@ -130,7 +130,7 @@ header {
     }
 
     .image {
-        max-width: 230px; /* Auf Handys max. 230px */
+        max-width: 350px; /* Bilder auf Handy max. 350px setzen */
     }
 }
 
@@ -150,6 +150,6 @@ header {
     }
 
     .image {
-        max-width: 230px; /* Weiterhin 230px für Handys */
+        max-width: 350px; /* Auf Handys max. 350px setzen */
     }
 }
