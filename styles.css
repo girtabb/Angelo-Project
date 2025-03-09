@@ -77,10 +77,14 @@ header {
 
 .image {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px; /* Bilder kleiner machen */
+    height: auto;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
@@ -126,7 +130,7 @@ header {
     }
 
     .image {
-        max-width: 150px;
+        max-width: 120px; /* Bilder weiter verkleinern */
         margin-top: 10px;
     }
 }
@@ -147,7 +151,7 @@ header {
     }
 
     .image {
-        max-width: 120px;
+        max-width: 100px; /* Bilder sehr klein für Handys */
         margin-top: 10px;
     }
 }
