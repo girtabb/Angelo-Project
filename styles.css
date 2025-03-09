@@ -16,16 +16,18 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
+    animation: fadeIn 2s ease-out;
 }
 
 header {
     font-size: 36px;
     font-weight: bold;
-    color: #FFA500;  /* Orange statt Coral */
+    color: #FFA500; /* Orange statt Coral */
     padding-top: 20px;
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
+    animation: slideDown 1.5s ease-out forwards;
 }
 
 .summary-container {
@@ -34,7 +36,7 @@ header {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    animation: slideUp 2s ease-in-out;
+    animation: fadeInUp 2s ease-out forwards;
 }
 
 .summary-item {
@@ -47,7 +49,7 @@ header {
     margin: 10px 0;
     opacity: 0;
     transform: translateY(-200px);
-    animation-duration: 1.2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     color: #fff;
 }
@@ -60,6 +62,21 @@ header {
     animation-name: slideInRight;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes slideInLeft {
     from { transform: translateX(-100%); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
@@ -70,14 +87,9 @@ header {
     to { transform: translateX(0); opacity: 1; }
 }
 
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(100px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 .image {
     width: 100%;
-    max-width: 230px; /* Bilder auf PC max. 230px setzen */
+    max-width: 230px;
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
@@ -85,11 +97,12 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    animation: fadeInUp 2s ease-out forwards;
 }
 
 .button {
     padding: 15px 30px;
-    background-color: #ff6f61;
+    background-color: #FFA500; /* Orange */
     color: white;
     border: none;
     border-radius: 10px;
@@ -99,10 +112,11 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
     margin-top: 30px;
+    animation: fadeInUp 2s ease-out 2s forwards;
 }
 
 .button:hover {
-    background-color: #ff3e2e;
+    background-color: #FF8C00;
     transform: scale(1.2);
 }
 
@@ -130,7 +144,7 @@ header {
     }
 
     .image {
-        max-width: 350px; /* Bilder auf Handy max. 350px setzen */
+        max-width: 350px;
     }
 }
 
@@ -150,6 +164,6 @@ header {
     }
 
     .image {
-        max-width: 350px; /* Auf Handys max. 350px setzen */
+        max-width: 350px;
     }
 }
