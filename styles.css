@@ -167,7 +167,7 @@ header {
     }
 
     header {
-        font-size: 1.8rem;  /* Smaller font size for mobile */
+        font-size: 60px;  /* Smaller font size for mobile */
         padding-top: 10px;
         padding-bottom: 10px;
     }
