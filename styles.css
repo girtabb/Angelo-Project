@@ -139,7 +139,7 @@ header {
     }
 
     header {
-        font-size: 2.5rem;
+        font-size: 2.2rem;  /* Smaller font size for header on tablets and mobile */
         margin-top: 10px;
     }
 
@@ -161,7 +161,7 @@ header {
 
 @media (max-width: 480px) {
     header {
-        font-size: 2rem;
+        font-size: 1.8rem;  /* Even smaller for mobile devices */
     }
 
     .summary-item {
