@@ -21,7 +21,7 @@ body {
 header {
     font-size: 36px;
     font-weight: bold;
-    color: 	#ffa500;
+    color: #ff6f61;
     padding-top: 20px;
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -77,10 +77,10 @@ header {
 
 .image {
     width: 100%;
-    max-width: 150px; /* Bilder kleiner machen */
+    max-width: 230px; /* Bilder auf max. 230px setzen */
     height: auto;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
     display: block;
     margin-left: auto;
@@ -130,8 +130,7 @@ header {
     }
 
     .image {
-        max-width: 230px; /* Bilder weiter verkleinern */
-        margin-top: 10px;
+        max-width: 230px; /* Auf Handys max. 230px */
     }
 }
 
@@ -151,7 +150,6 @@ header {
     }
 
     .image {
-        max-width: 200px; /* Bilder sehr klein für Handys */
-        margin-top: 10px;
+        max-width: 230px; /* Weiterhin 230px für Handys */
     }
 }
