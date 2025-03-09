@@ -130,7 +130,7 @@ header {
     }
 
     .image {
-        max-width: 120px; /* Bilder weiter verkleinern */
+        max-width: 230px; /* Bilder weiter verkleinern */
         margin-top: 10px;
     }
 }
