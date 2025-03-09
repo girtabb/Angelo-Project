@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    font-size: 70px;
+    font-size: 3rem;
     font-weight: bold;
     color: #ff6f61;
     padding-top: 20px;
@@ -37,8 +37,8 @@ header {
     animation: slideUp 2s ease-in-out;
     padding: 20px 15px;
     margin-bottom: 100px;
-    margin-left: 15px; /* To avoid cutting text on left edge */
-    margin-right: 15px; /* To avoid cutting text on right edge */
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .summary-item {
@@ -139,8 +139,9 @@ header {
     }
 
     header {
-        font-size: 2.2rem;  /* Smaller font size for header on tablets and mobile */
+        font-size: 2.2rem;  /* Slightly smaller header on tablets */
         margin-top: 10px;
+        padding-bottom: 20px;  /* Padding for better spacing */
     }
 
     .summary-item {
@@ -160,12 +161,20 @@ header {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     header {
-        font-size: 1.8rem;  /* Even smaller for mobile devices */
+        font-size: 1.8rem;  /* Smaller font size for mobile */
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .summary-item {
         font-size: 1rem;
+        padding: 12px;
     }
 
     .animation-text {
